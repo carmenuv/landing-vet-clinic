@@ -1,12 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import {Servicios} from './components';
+import Router from '../src/router';
+
 
 function App() {
   return (
     <div className="App">
-      <Servicios/>
 
+      <div>
+        <Router/>
+      </div>
       
     </div>
   );
