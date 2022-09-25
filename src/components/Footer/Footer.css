@@ -49,7 +49,7 @@
     background-image: url(../../assets/llamada-telefonica2.png);
 }
 .icono-user{
-    background-image: url(../../assets/llamada-telefonica2.png);
+    background-image: url(../../assets/usuario2.png);
 }
 .container__acepto-datos{
     display: flex;
@@ -212,9 +212,11 @@
         flex-direction: row;  
         width: 30rem;   
         justify-content: flex-start;   
+       
     }
     .botones-citas button{
         margin-left: 0;
+        
     }
     .list-footer{
         display: flex;

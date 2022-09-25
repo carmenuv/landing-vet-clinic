@@ -4,39 +4,25 @@ const Adoption=()=>{
     return(
         <div>
             <section className='form-container'>
-                <div className='grid-container'>
-                    <div className='solicitud'>
-
-                        <div className="rabbit-image">                                
-                        </div>
-
-                        <h2 >Envíe su solicitud</h2>
-                        <p>Déjanos tus datos y nos comunicaremos a la brevedad posible.</p>
-
-                        <div className='inputs-images'>
-                            <form action="" className='input-container'>
-                                <input type="text" className="icono-user"placeholder="Nombre Completo"/>
-                                <input type="text" className="icono-huella" placeholder="Tipo de mascota"/>
-                                <input type="text" className="icono-telefono" placeholder="Número de teléfono"/> 
-                                
-                                <div className='container__acepto-datos'>
-                                    <input type="checkbox" className='acepto-datos' />
-                                    <label className='datos-label' htmlFor=""> Acepto el tratamiento de datos personales</label>
-                                </div>                                     
-                               
-                            </form>
-                            <div className="botones-citas">
-                                <button className='hacer-cita hacer-cita--colorbg'>Reserve una cita</button>
-                                <button className='hacer-cita '>Llame a un médico</button>
-                            </div> 
-                        </div>                        
-                    </div>
-
+                <div className='grid-container center'>
                     
+                    <div className="rabbit-image">                                
+                    </div>
+                    <div className='adopcion'>
+                        <h2 >Adopción</h2>
+                        <h3>Adopta en VetClinic</h3>
+                        <p>La defensa de los animales es una causa que involucra justicia, 
+                            compasión y respeto. Con responsabilidad, seguiremos defendiendo 
+                            los derechos animales, dando así voz a aquellos que todavía no la 
+                            tienen en nuestra sociedad</p>
+                        <div className="botones-citas">
+                            <button className='hacer-cita hacer-cita--colorbg'>¡¡¡Adopta!!!</button>                            
+                        </div>
+                    </div>
+                                       
                 </div>
             </section>
         </div>
     )
 };
-
 export default Adoption;

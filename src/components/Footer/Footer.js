@@ -3,34 +3,7 @@ import './Footer.css';
 const Footer=()=>{
     return(
         <div className='contenedor-hidden'>
-            <section className='form-container'>
-                <div className='grid-container'>
-                    <div className='solicitud'>
-                        <h2 >Envíe su solicitud</h2>
-                        <p>Déjanos tus datos y nos comunicaremos a la brevedad posible.</p>
-
-                        <div className='inputs-images'>
-                            <form action="" className='input-container'>
-                                <input type="text" className="icono-user"placeholder="Nombre Completo"/>
-                                <input type="text" className="icono-huella" placeholder="Tipo de mascota"/>
-                                <input type="text" className="icono-telefono" placeholder="Número de teléfono"/> 
-                                
-                                <div className='container__acepto-datos'>
-                                    <input type="checkbox" className='acepto-datos' />
-                                    <label className='datos-label' htmlFor=""> Acepto el tratamiento de datos personales</label>
-                                </div>                                     
-                               
-                            </form>
-                            <div className="botones-citas">
-                                <button className='hacer-cita hacer-cita--colorbg'>Reserve una cita</button>
-                                <button className='hacer-cita '>Llame a un médico</button>
-                            </div> 
-                        </div>                        
-                    </div>
-                    <div className="huron-image">                                
-                    </div>
-                </div>
-            </section>
+            
 
             
 
@@ -40,10 +13,10 @@ const Footer=()=>{
                         <div className="contactese-con">
                             <h2 className="text-center menu-contactese">Contáctanos</h2>
                             <nav className="list-footer">
-                                <li>Direccion</li>
-                                <li>reloj</li>
-                                <li>telefono</li>
-                                <li>email</li>
+                                <li>Santiago de Surco 386</li>
+                                <li>8:00 am  - 8:00 pm</li>
+                                <li>(+51) 982137382</li>
+                                <li>vetclinic@gmail.com</li>
                             </nav>
                             <div className="mapa-veterinaria">
                                 <iframe 
@@ -66,7 +39,7 @@ const Footer=()=>{
                                 <nav className="ancor-footer">
                                     <a href="#">Servicios</a>
                                     <a href="#">Doctores</a>
-                                    <a href="#">Quienes somos</a>
+                                    <a href="#">Quienes Somos</a>
                                     <a href="#">Preguntas</a>
                                     <a href="#">Opiniones</a>
                                 </nav>
