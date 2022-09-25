@@ -17,13 +17,12 @@ const Footer=()=>{
                                 <div>
                                     <input type="checkbox" className='acepto-datos' />Acepto el <span>tratamiento de datos personales</span>
                                 </div>                                     
-                               
+
                             </form>
                             <div className="botones-citas">
                             <button className='hacer-cita hacer-cita--colorbg'>Reserve una cita</button>
                             <button className='hacer-cita '>Llame a un médico</button>
-                            {/* <a href="#" className="hacer-cita hacer-cita--colorbg">Haga una cita</a>
-                            <a href="#" className="llamar-doctor">Llame a un médico</a> */}
+
                         </div> 
                         </div>
 
