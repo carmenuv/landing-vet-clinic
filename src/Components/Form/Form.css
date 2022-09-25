@@ -1,0 +1,96 @@
+
+.form-container{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.huron-image{    
+  width: 250px;
+  height: 250px;
+  background-image: url(../../assets/huron-section-form.png);
+  background-repeat: no-repeat;
+  margin: 0px auto;    
+  background-size: cover;
+  grid-row: 1/2;  
+
+}
+.input-container{
+  width: 17rem;
+}
+.icono-user,
+.icono-telefono,
+.icono-huella{
+  background-image: url(../../assets/huella2.png);
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+  background-position: 1rem center;
+  padding: 0.5rem 0 0.5rem 3rem;
+  border-radius: 5rem;
+  border: 1px solid #dbdbdb;
+  height: 3rem;
+  margin: 0 1rem 1rem 0.5rem;
+  border-color: rgb(208, 205, 205);
+  width: 100%;
+  outline: none;    
+}
+
+.icono-telefono{
+  background-image: url(../../assets/llamada-telefonica2.png);
+}
+.icono-user{
+  background-image: url(../../assets/llamada-telefonica2.png);
+}
+.container__acepto-datos{
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  gap: 1rem;    
+}
+.datos-label{
+  font-size: .8rem;
+}
+.acepto-datos span{
+  color: #037bc0;
+}
+.grid-container{
+  display: grid;
+  padding: 1rem 1rem;
+  overflow-x: hidden;
+}
+
+
+
+@media (min-width: 854px) {
+  .inputs-images{
+      
+      margin-top: 2rem;
+  }
+  .grid-container{
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(2,1fr);        
+  }
+  .huron-image{
+      grid-column: 2/3;
+      
+      width: 330px;
+      height: 330px;
+  }
+  .solicitud{
+      grid-column: 1/2;        
+      text-align: left;
+  }    
+  .botones-citas{
+      display: flex;
+      flex-direction: row;  
+      width: 30rem;   
+      justify-content: flex-start;   
+  }
+  .botones-citas button{
+      margin-left: 0;
+  }
+  .input-container{
+      width: 26rem;
+  }
+  
+
+}
