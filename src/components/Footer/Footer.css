@@ -87,7 +87,7 @@
     flex-direction: column;
     width: 15rem;
     justify-content: center;
-    margin: auto;    
+    margin: 0 auto;    
 }
 .hacer-cita--colorbg,
 .botones-citas :hover{
@@ -183,9 +183,13 @@
     text-align: center;
 }
 
+.inputs-images{  
+    display: inline-block;  
+}
+
+
 @media (min-width: 854px) {
-    .inputs-images{
-        
+    .inputs-images{        
         margin-top: 2rem;
     }
     .grid-container{
@@ -245,6 +249,7 @@
     }
     .input-container{
         width: 26rem;
+        
     }
     
 

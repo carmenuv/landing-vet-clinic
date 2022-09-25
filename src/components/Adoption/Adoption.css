@@ -1,0 +1,37 @@
+html{
+    box-sizing: border-box;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+.rabbit-image{
+    width: 250px;
+    height: 250px;
+    background-image: url(../../assets/conejo-section-adoption.png);
+    background-repeat: no-repeat;
+    margin: 0px auto;    
+    background-size: cover;
+    grid-row: 1/2;
+}
+
+
+@media (min-width: 854px) {
+    .inputs-images{        
+        margin-top: 2rem;
+    }
+    .grid-container{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2,1fr);        
+    }
+    .rabbit-image{
+        grid-column: 2/3;        
+        width: 330px;
+        height: 330px;
+    }
+    .solicitud{
+        grid-column: 1/2;        
+        text-align: left;
+    }   
+}
