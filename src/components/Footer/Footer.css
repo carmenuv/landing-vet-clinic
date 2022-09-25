@@ -1,0 +1,194 @@
+/* html{
+    box-sizing: border-box;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+} */
+/* SECCION ENVIA TU SOLICITUD */
+/* .contenedor{
+    max-width: 60rem;
+    margin: 0 auto;
+} */
+.text-center{
+    text-align: center;        
+}
+.huron-image{    
+    width: 250px;
+    height: 250px;
+    background-image: url(../../assets/huron-section-form.png);
+    background-repeat: no-repeat;
+    margin: 0px auto;    
+    background-size: cover;
+    grid-row: 1/2;  
+}
+.icono-user,
+.icono-telefono,
+.icono-huella{
+    background-image: url(../../assets/huella2.png);
+    background-size: 1rem 1rem;
+    background-repeat: no-repeat;
+    background-position: 1rem center;
+    padding: 0.5rem 0 0.5rem 3rem;
+    border-radius: 5rem;
+    border: 1px solid #dbdbdb;
+    height: 3rem;
+    margin: 0 1rem 1rem 0.5rem;
+    border-color: rgb(208, 205, 205);
+    width: 24rem;
+    outline: none;
+}
+.icono-telefono{
+    background-image: url(../../assets/llamada-telefonica2.png);
+}
+.icono-user{
+    background-image: url(../../assets/llamada-telefonica2.png);
+}
+.acepto-datos{    
+    margin: 1rem 1rem 2rem 0.5rem;
+}
+.acepto-datos span{
+    color: #037bc0;
+}
+.grid-container{
+    display: grid;
+    padding: 1rem 1rem;  
+}
+.hacer-cita{
+    height: 3.5rem;
+    margin: 0 1rem 1rem 1rem;
+    padding: 0 1.5rem;
+    outline: none;
+    border-radius: 50px;
+    border: 1px solid #f65875;    
+    background-color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.5s;        
+}
+.botones-citas{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    justify-content: center;
+    margin: auto;    
+}
+.hacer-cita--colorbg,
+.botones-citas :hover{
+  height: 3.5rem;
+  margin: 0 1rem 1rem 1rem;
+  padding: 0 1.5rem;
+  outline: none;
+  border-radius: 50px;
+  border: 1px solid #f65875;
+  background-color: #f65875;
+  color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.hacer-cita--colorbg:hover{
+    border: 1px solid #e63f5d;
+    background-color: #e63f5d;
+}
+.footer-principal{
+    background-image: url(../../assets/footer-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;  
+    background-size: cover; 
+    max-width: 1024px; 
+}
+.contactese-con{
+    margin: 0 1rem 1rem 0.5rem;    
+}
+.menu-contactese{
+    margin-top: 2.5rem;
+}
+.list-footer li{
+    list-style: none;
+    margin: 0 1rem 1rem 0.5rem;
+}
+.mapa-veterinaria{
+    display: flex;
+    justify-content: center;
+}
+.panda{
+    background-image: url(../../assets/logo-vet-clinic.svg);
+    width: 4rem;
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    filter: grayscale(50%);
+    
+}
+.ancor-footer a{
+    display: block;
+    margin: 0 1rem 1rem 0.5rem;
+    text-decoration: none;
+}
+.ancor-iconos a,i{
+    text-decoration: none;
+    margin: 0 1rem 1rem 0.2rem;       
+}
+.ancor-iconos{
+    margin: 2rem 0;    
+}
+@media (min-width: 854px) {
+    .inputs-images{
+        /* margin-left: .5rem; */
+        margin-top: 2rem;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .huron-image{
+        grid-column: 2/3;
+        margin-top: 20%;
+
+    }
+    .solicitud{
+        grid-column: 1/2;
+        /* margin-left: 0; */
+    }    
+    .botones-citas{
+        display: flex;
+        flex-direction: row;        
+    }
+    .botones-citas button{
+        margin-left: 0;
+    }
+    .list-footer{
+        display: flex;
+        justify-content: space-around;        
+    }   
+    .mapa-veterinaria{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;        
+    }
+    .mapa-veterinaria iframe{
+        width:55rem;
+        height:350px;
+    }
+    .enlaces-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    .enlaces-servicios{
+        display: flex;        
+        align-items: center;
+    }
+    .enlaces-servicios a{
+        display: inline-flex;
+        flex-direction: row;
+    }
+    .copyright{
+        margin: 0;
+    }
+    
+
+  }
