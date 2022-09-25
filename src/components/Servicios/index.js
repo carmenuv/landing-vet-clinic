@@ -36,7 +36,7 @@ const Servicios =()=>{
               </p>
               <div>
                 <h3 className="slider__price">s/100</h3>
-                <button className="slider__price-link">Más información</button>
+                
               </div>
             </div>            
           </SwiperSlide>
@@ -52,7 +52,7 @@ const Servicios =()=>{
               </p>
               <div>
                 <h3 className="slider__price">s/120</h3>
-                <button className="slider__price-link">Más información</button>
+                
               </div>
             </div>
           </SwiperSlide>
@@ -68,7 +68,7 @@ const Servicios =()=>{
               </p>
               <div>
                 <h3 className="slider__price">s/30</h3>
-                <button className="slider__price-link">Más información</button>
+                
               </div>
             </div>
           </SwiperSlide>
@@ -84,7 +84,7 @@ const Servicios =()=>{
               </p>
               <div>
                 <h3 className="slider__price">s/90</h3>
-                <button className="slider__price-link">Más información</button>
+                
               </div>
             </div>
           </SwiperSlide>
@@ -100,7 +100,7 @@ const Servicios =()=>{
               </p>
               <div>
                 <h3 className="slider__price">s/165</h3>
-                <button className="slider__price-link">Más información</button>
+                
               </div>
             </div>
           </SwiperSlide>
@@ -116,7 +116,7 @@ const Servicios =()=>{
               </p>
               <div>
                 <h3 className="slider__price">s/150</h3>
-                <button className="slider__price-link">Más información</button>
+                
               </div>
             </div>
           </SwiperSlide>

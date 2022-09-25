@@ -91,7 +91,7 @@ body {
   font-weight: 800;
 }
 
-.slider__price-link{
+/* .slider__price-link{
   height: 3.5rem;
   margin: 0 1rem 1rem 1rem;
   padding: 0 1.5rem;
@@ -109,7 +109,7 @@ body {
 .slider__price-link:hover{
   border: 1px solid #e63f5d;
   background-color: #e63f5d;
-}
+} */
 
 @media (min-width: 854px){
 
