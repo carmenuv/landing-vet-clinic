@@ -1,0 +1,44 @@
+.header {
+    background-color: #27b1f4;
+    position: fixed;
+    z-index: 25;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container {
+    padding: 2rem 1 rem;
+    max-width:  1090px;
+
+}
+
+
+.header-nav_link-logo {
+    object-fit: cover;
+    width: 60%;
+    height: 60%;
+
+}
+
+
+
+@media (min-width: 854px) {
+
+    .header-nav_menu-label {
+        display: none;
+    }
+
+    .header-nav_menu-list {
+
+        position: static;
+        background-color: transparent;
+        opacity: 1;
+        pointer-events: auto;
+        flex-direction: row;
+        gap: 2rem;
+
+    }
+
+
+}
