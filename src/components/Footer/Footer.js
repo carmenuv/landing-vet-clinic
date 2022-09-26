@@ -7,12 +7,12 @@ const Footer=()=>{
                 <div className='footer-limit'>
                     <div className="flex-footer">
                         <div className="contactese-con">
-                            <h2 className="text-center menu-contactese">Contáctanos</h2>
+                            <h2 className="menu-contactese">Contáctanos</h2>
                             <nav className="list-footer">
-                                <li>Direccion</li>
-                                <li>reloj</li>
-                                <li>telefono</li>
-                                <li>email</li>
+                                <li>Avenida Paseo la Castellana 000. Santiago de Surco</li>
+                                <li>8am - 8pm</li>
+                                <li>954 365 128</li>
+                                <li>hola@vetclinic.com</li>
                             </nav>
                             <div className="mapa-veterinaria">
                                 <iframe 
@@ -35,7 +35,7 @@ const Footer=()=>{
                                 <nav className="ancor-footer">
                                     <a href="#">Servicios</a>
                                     <a href="#">Doctores</a>
-                                    <a href="#">Quienes somos</a>
+                                    <a href="#">Quiénes somos</a>
                                     <a href="#">Preguntas</a>
                                     <a href="#">Opiniones</a>
                                 </nav>
@@ -58,7 +58,7 @@ const Footer=()=>{
                             </div>   
                         </div>
                         <div className='copyright'>
-                            <p className="copyright-info ">2022. Todos los derechos reservados. Consentimiento
+                            <p className="copyright-info ">©2022. Todos los derechos reservados. Consentimiento
                             para el tratamiento de datos.
                             </p>
                         </div>

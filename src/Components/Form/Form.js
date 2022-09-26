@@ -6,8 +6,8 @@ const Form=()=>{
             <section className='form-container'>
                 <div className='grid-container'>
                     <div className='solicitud'>
-                        <h2 >Envíe su solicitud</h2>
-                        <p>Déjanos tus datos y nos comunicaremos a la brevedad posible.</p>
+                        <h2 className='solicitud__title'>Envíe su solicitud</h2>
+                        <p className='solicitud__subtitle'>Déjanos tus datos y nos comunicaremos a la brevedad posible.</p>
 
                         <div className='inputs-images'>
                             <form action="" className='input-container'>

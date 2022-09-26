@@ -2,7 +2,18 @@
 .form-container{
   max-width: 1024px;
   margin: 0 auto;
+  font-family: 'Nunito', sans-serif;
 }
+.solicitud__title{
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.solicitud__subtitle{
+  font-weight: 300;
+  font-size: 1rem;
+}
+
 .huron-image{    
   width: 250px;
   height: 250px;
@@ -60,6 +71,10 @@
 
 
 @media (min-width: 854px) {
+  .form-container{
+    margin-top: 3rem;
+  }
+
   .inputs-images{
       
       margin-top: 2rem;
@@ -70,15 +85,23 @@
       grid-template-columns: repeat(2,1fr);        
   }
   .huron-image{
-      grid-column: 2/3;
-      
-      width: 330px;
-      height: 330px;
+      grid-column: 2/3;      
+      width: 430px;
+      height: 430px;
   }
   .solicitud{
       grid-column: 1/2;        
       text-align: left;
-  }    
+  }
+  .solicitud__title{
+    font-size: 2.5rem;
+  }
+
+  .solicitud__subtitle{
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+  
   .botones-citas{
       display: flex;
       flex-direction: row;  
