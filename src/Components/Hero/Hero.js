@@ -3,6 +3,7 @@ import './Hero.css';
 import perrito from "../../Img/img-hero.png";
 import { Servicios } from '../Servicios';
 import Form from '../Form/Form';
+import AdoptionSection from '../Adoption';
 
 
 const Hero = () => {
@@ -27,6 +28,7 @@ const Hero = () => {
                 </article>
             </main>
             <Servicios/>
+            <AdoptionSection/>
             <Form/>
         </div>
 
