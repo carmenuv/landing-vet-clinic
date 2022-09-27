@@ -1,10 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Servicios } from "../components/Servicios/index";
 import Adoption from "../components/Adopta";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Hero from "../components/Hero/Hero";
-
 
 const Router =()=>{
 
@@ -13,14 +11,12 @@ const Router =()=>{
     <BrowserRouter>
 
       <Header/>
-
       <Routes>        
         <Route path="/" element={<Hero/>}/>
-        <Route path="/adopcion" element={<Adoption/>}/>  
+        <Route path="/adopcion" element={<Adoption/>}/>
       </Routes>
-
       <Footer/>
-
+      
     </BrowserRouter>
 
   )

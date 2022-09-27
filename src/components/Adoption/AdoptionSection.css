@@ -1,9 +1,10 @@
 .adoption {
   font-family: 'Nunito', sans-serif;
-  margin: 0;
+  margin: 2rem 0;
   padding: 1rem;
 }
 .adoption__info-title {
+  color: #434343;
   margin: 0 auto;
   padding: 0;
   font-size: 2rem;
@@ -19,6 +20,7 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  margin-top: 1rem;
 }
 
 .adoption__img-container {
@@ -37,6 +39,7 @@
 }
 
 .adoption__info-subtitle {
+  color: #434343;
   font-size: 1.3rem;
   font-weight: 800;
 }
@@ -67,11 +70,15 @@
 
 @media (min-width: 854px){
 
+  .adoption{
+    margin-top: 3rem;
+  }
+
   .adoption__container {
     flex-direction: row;
     align-items: center;
     gap: 3rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
   }
 
   .adoption__img-container {
@@ -97,7 +104,7 @@
   }
 
   .adoption__info-button {
-    width: 10rem;
+    width: 11rem;
   }
   
 

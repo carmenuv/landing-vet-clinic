@@ -52,14 +52,15 @@
 
 .hero_info-link-container {
 margin-top: 1rem;
-
+display: flex;
+flex-direction: column;
 }
 
 .hero_info-link,
 .hero_info-link--colorbg {
-  height: 3.5rem;
+  text-decoration: none;
   margin: 0 1rem 1rem 1rem;
-  padding: 0 1.5rem;
+  padding: 1rem 1rem;
   outline: none;
   border-radius: 50px;
   border: 1px solid #fff;
@@ -70,12 +71,13 @@ margin-top: 1rem;
   transition: 0.5s;
   font-weight: 400;
   width: 15rem;
-
+  font-weight: 800;  
 }
 
 .hero_info-link--colorbg:hover{
   border: 1px solid #ceeaf8;
   background-color: #ceeaf8;
+  color: #27b1f4;
 }
 
 .hero_info-link{
@@ -121,6 +123,16 @@ text-align: left;
   font-size: 3rem;
 
 }
+
+.hero_info-link-container {
+  flex-direction: row;
+  }
+  
+  .hero_info-link,
+  .hero_info-link--colorbg {
+    text-align: center;  
+    width: 13rem;
+  }
 
 .hero_info-link--colorbg{
   margin-left: 0;

@@ -17,16 +17,16 @@ const Header = () => {
             <div className="collapse navbar-collapse justify-content-end " id="navbarNav">
               <ul className="navbar-nav nav">
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="#">Servicios</a>
+                  <a className="nav-link text-white" href="#servicios">Servicios</a>
                 </li>
                 <li className="nav-item ">
-                  <a className="nav-link text-white" href="#">Staff</a>
+                  <a className="nav-link text-white" href="#equipo">Equipo</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="#">Testimonios</a>
+                  <a className="nav-link text-white" href="#testimonios">Testimonios</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="#">Contacto</a>
+                  <a className="nav-link text-white" href="#contacto">Contanto</a>
                 </li>
               </ul>
             </div>

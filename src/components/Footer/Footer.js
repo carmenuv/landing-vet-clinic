@@ -3,7 +3,7 @@ import './Footer.css';
 const Footer=()=>{
     return(
         <div>
-            <footer className='footer-principal'>
+            <footer className='footer-principal' id="contacto">
                 <div className='footer-limit'>
                     <div className="flex-footer">
                         <div className="contactese-con">
@@ -33,25 +33,25 @@ const Footer=()=>{
         
                             <div className="enlaces-servicios">                        
                                 <nav className="ancor-footer">
-                                    <a href="#">Servicios</a>
-                                    <a href="#">Doctores</a>
+                                    <a href="#servicios">Servicios</a>
+                                    <a href="#equipo">Equipo</a>
                                     <a href="#">Quiénes somos</a>
                                     <a href="#">Preguntas</a>
-                                    <a href="#">Opiniones</a>
+                                    <a href="#testimonios">Opiniones</a>
                                 </nav>
                             </div>
                             <div>                        
                                 <nav className="ancor-iconos">
-                                    <a href="#">
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                                         <i className="bi bi-facebook"></i>
                                     </a>                            
-                                    <a id="instagram" href="#">
+                                    <a id="instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                                         <i className="bi bi-instagram"></i>
                                     </a>
-                                    <a id="twitter" href="#">
+                                    <a id="twitter" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
                                         <i className="bi bi-twitter"></i>
                                     </a>
-                                    <a id="twitter" href="#">
+                                    <a id="telegram" href="https://web.telegram.org/z/" target="_blank" rel="noopener noreferrer">
                                         <i className="bi bi-telegram"></i>
                                     </a>                            
                                 </nav>

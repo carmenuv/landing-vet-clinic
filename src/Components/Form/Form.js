@@ -3,10 +3,10 @@ import './Form.css';
 const Form=()=>{
     return(
         <div>
-            <section className='form-container'>
+            <section className='form-container' id="reserva">
                 <div className='grid-container'>
                     <div className='solicitud'>
-                        <h2 className='solicitud__title'>Envíe su solicitud</h2>
+                        <h2 className='solicitud__title'>Reserva una cita</h2>
                         <p className='solicitud__subtitle'>Déjanos tus datos y nos comunicaremos a la brevedad posible.</p>
 
                         <div className='inputs-images'>

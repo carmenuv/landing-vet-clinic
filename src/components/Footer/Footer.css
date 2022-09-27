@@ -14,50 +14,14 @@
     font-family: 'Nunito', sans-serif; 
 }
 
-.hacer-cita{
-    height: 3.5rem;
-    margin: 0 1rem 1rem 1rem;
-    padding: 0 1.5rem;
-    outline: none;
-    border-radius: 50px;
-    border: 1px solid #f65875;    
-    background-color: #fff;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.5s;        
-}
-.botones-citas{
-    display: flex;
-    flex-direction: column;
-    width: 15rem;
-    justify-content: center;
-    margin: auto;    
-}
-.hacer-cita--colorbg,
-.botones-citas :hover{
-    height: 3.5rem;    
-    padding: 0 1.5rem;
-    outline: none;
-    border-radius: 50px;
-    border: 1px solid #f65875;
-    background-color: #f65875;
-    color: #ffffff;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.hacer-cita--colorbg:hover{
-    border: 1px solid #e63f5d;
-    background-color: #e63f5d;
-}
+
 
 .contactese-con{
     margin: 0 1rem 1rem 0.5rem;    
 }
 .menu-contactese{
-    margin-top: 2.5rem;
+    color: #434343;
+    margin-top: 1rem;
     font-weight: 800;
     text-align: center;
     padding: 1rem;

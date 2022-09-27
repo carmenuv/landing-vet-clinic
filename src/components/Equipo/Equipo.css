@@ -1,0 +1,43 @@
+*{
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0 ;
+}
+
+.equipo {
+  margin-top: 0;
+}
+
+.equipo__info-title {
+  color: #434343;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.equipo__info-subtitle {
+  color: #434343;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.adoption__info-paragraph {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+
+@media (min-width: 854px) {
+  
+  .equipo {
+    margin-top: 3rem;
+  }
+  
+  .equipo__info-title {
+    font-size: 2.5rem;
+  }
+  
+  .adoption__info-paragraph {
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+}

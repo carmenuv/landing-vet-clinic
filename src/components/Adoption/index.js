@@ -6,8 +6,8 @@ const AdoptionSection = () => {
 
 
   return (
-    <section className="adoption">
-      <h2 className="adoption__info-title">Adopción</h2>
+    <section className="adoption" id="adopta">
+      <h2 className="adoption__info-title">Adopta</h2>
       <div className="adoption__container">
         <div className="adoption__img-container">
           <img src={conejo} alt="" className="adoption__img-rabbit"/>
@@ -22,7 +22,7 @@ const AdoptionSection = () => {
             en nuestra sociedad
           </p>
           <div>
-            <button className="adoption__info-button">¡Adopta!</button>
+            <button className="adoption__info-button">Quiero adoptar</button>
           </div>
         </div>
       </div>
