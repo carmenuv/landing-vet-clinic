@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Adoption from "../components/Adopta";
 // import { Testimonios } from "../components/Testimonios/index";
 import { Equipo } from "../components/Equipo/index";
+import { Testimonios } from "../components/Testimonios";
 
 
 
@@ -15,7 +16,8 @@ const Router =()=>{
       <Routes>
         {/* <Route path="/" element={<Servicios/>}/> */}
         {/* <Route path="/" element={<Testimonios/>}/> */}
-        <Route path="/" element={<Equipo/>}/>
+        <Route path="/equipo" element={<Equipo/>}/>
+        <Route path="/testimonios" element={<Testimonios/>}/>
         {/* <Route path="/adopcion" element={<Adoption/>}/> */}
       </Routes>
 
