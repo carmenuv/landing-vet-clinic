@@ -58,7 +58,7 @@ const Footer=()=>{
                             </div>   
                         </div>
                         <div className='copyright'>
-                            <p className="copyright-info ">©2022. Todos los derechos reservados. Consentimiento
+                            <p className="copyright-info ">©2022. Derechos Reservados. Consentimiento
                             para el tratamiento de datos.
                             </p>
                         </div>
