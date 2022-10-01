@@ -9,7 +9,7 @@ const Header = () => {
       <div className='container'>
         <nav className="navbar navbar-expand-lg p-3 ">
           <div className="container-fluid ">
-            <a className="navbar-brand " href="#"><img className='header-nav_link-logo' src={logo} alt="Logo Veterinaria" width="12" height="22" />
+            <a className="navbar-brand " href="#"><img className='header-nav_link-logo' src={logo} alt="Logo Veterinaria" width="134px" height="44px" />
             </a>
             <button className="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav " aria-expanded="false" aria-label="Toggle navigation ">
               <span className="navbar-toggler-icon navbar-dark" ></span>
