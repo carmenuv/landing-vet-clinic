@@ -43,6 +43,13 @@
   border-color: rgb(208, 205, 205);
   width: 100%;
   outline: none;    
+  transition: .5s;
+}
+
+.icono-user:focus,
+.icono-telefono:focus,
+.icono-huella:focus{
+  border-color: #27b1f4;
 }
 
 .icono-telefono{
