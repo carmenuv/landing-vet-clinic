@@ -8,7 +8,6 @@ import { Equipo } from '../Equipo/index';
 import {Testimonios} from '../Testimonios/index';
 
 
-
 const Hero = () => {
     return (
 
