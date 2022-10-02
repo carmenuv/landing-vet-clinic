@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import { useState } from "react";
 import {
   Container,
@@ -17,6 +16,7 @@ import {
 import { Link } from "react-router-dom";
 import './AdoptaPets.css'
 import { pets } from "./pets";
+import PetDetail from "./PetDetail/PetDetail";
 
 const GetPets = () => {
 
@@ -51,28 +51,30 @@ const GetPets = () => {
       </Grid>
 
         {pet.length > 0 ? (
-          pet.map((p, index) => (
+          pet.map((mascot, index) => (
             <Grid key={index} item md={4} sm={12} xs={12}>
               <div sx={{ maxWidth: 346 }} className="adoption__card">
-                <CardActionArea>
+                
                   <CardMedia
                     component="img"
                     height="200"
-                    image={p.image}
-                    alt={p.name}
+                    image={mascot.image}
+                    alt={mascot.name}
                   />
                   <CardContent>
                     <h2 variant="h5" gutterBottom className="adoption__card-title">
-                      {p.name.toUpperCase()}
+                      {mascot.name.toUpperCase()}
                     </h2>
                     <div className="adoption__card-info">
-                      <span>Género: {p.gender}</span>
+                      <span>Género: {mascot.gender}</span>
                       <span>|</span>
-                      <span>Edad: {p.age}</span>
+                      <span>Edad: {mascot.age}</span>
                     </div>
-                    
+                    <div className="adoption__card-button-margin">
+                      <PetDetail mascotImage={mascot.image} mascotName={mascot.name} mascotDescription={mascot.description} mascotGender={mascot.gender} mascotSize={mascot.size}/>
+                    </div>
                   </CardContent>
-                </CardActionArea>
+                
               </div>
             </Grid>
           ))
