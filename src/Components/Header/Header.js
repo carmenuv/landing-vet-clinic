@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import logo from "../../Img/logo-vet-clinic.svg";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -9,8 +10,11 @@ const Header = () => {
       <div className='container'>
         <nav className="navbar navbar-expand-lg p-3 ">
           <div className="container-fluid ">
-            <a className="navbar-brand " href="#"><img className='header-nav_link-logo' src={logo} alt="Logo Veterinaria" width="134px" height="44px" />
+            <Link to="/" className="navbar-brand">
+            <a href="#">
+              <img className='header-nav_link-logo' src={logo} alt="Logo Veterinaria" width="134px" height="44px" />
             </a>
+            </Link>
             <button className="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav " aria-expanded="false" aria-label="Toggle navigation ">
               <span className="navbar-toggler-icon navbar-dark" ></span>
             </button>
@@ -26,7 +30,7 @@ const Header = () => {
                   <a className="nav-link text-white" href="#testimonios">Testimonios</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="#contacto">Contanto</a>
+                  <a className="nav-link text-white" href="#contacto">Contacto</a>
                 </li>
               </ul>
             </div>

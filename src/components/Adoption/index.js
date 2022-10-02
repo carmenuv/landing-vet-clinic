@@ -1,6 +1,7 @@
 import React from "react";
 import "./AdoptionSection.css";
 import conejo from "../../assets/conejo-section-adoption.png";
+import { Link } from "react-router-dom";
 
 const AdoptionSection = () => {
 
@@ -19,10 +20,12 @@ const AdoptionSection = () => {
             La defensa de los animales es una causa que involucra justicia,
             compasión y respeto. Con responsabilidad, seguiremos defendiendo los
             derechos animales, dando así voz a aquellos que todavía no la tienen
-            en nuestra sociedad
+            en nuestra sociedad.
           </p>
           <div>
+          <Link to="/adopta">
             <button className="adoption__info-button">Quiero adoptar</button>
+          </Link>
           </div>
         </div>
       </div>

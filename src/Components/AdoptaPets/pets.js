@@ -1,4 +1,4 @@
-[
+export const pets = [
   {
     "id": "0fc1b930-0a01-11ed-861d-0242ac120002",
     "name": "aby",
