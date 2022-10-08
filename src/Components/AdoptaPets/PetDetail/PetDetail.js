@@ -1,5 +1,5 @@
 import React from "react";
-import { Dialog, DialogContent, Button, Grid, Chip, Typography, Divider, Container } from "@mui/material";
+import { Dialog, DialogContent, Button, Grid, Chip, Typography, Divider, Container, CardMedia } from "@mui/material";
 import { useState } from "react";
 import { pets } from "../pets";
 import './PetDetail.css';
@@ -42,9 +42,9 @@ const PetDetail = (props)=>{
       <div className="dialog__info-container">
       
         <Grid item>
-          <div className="dialog__img-container">
+          <CardMedia>
             <img src={props.mascotImage} width={500} alt={props.mascotName.toUpperCase()}/>
-          </div>
+          </CardMedia>
         </Grid>
 
         <Grid mt={3}>
@@ -53,6 +53,7 @@ const PetDetail = (props)=>{
           <div className="dialog__pet-details">
             <Typography><b>Género:</b> {props.mascotGender}</Typography>
             <Typography><b>Tamaño:</b> {props.mascotSize}</Typography>
+            <Typography><b>Edad:</b> {props.mascotAge}</Typography>
           </div>
           <Divider />
           <div className="dialog__pet-description">

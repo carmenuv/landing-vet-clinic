@@ -22,13 +22,38 @@ const GetPets = () => {
 
   const [pet, setPet] = useState(pets);
 
-  const handleGender = (e) => {
-    const gender = e.target.value;
-    if(gender === "all"){
+  const handleType = (e) => {
+
+    const value = e.target.value;
+
+    if(value === "all"){
       return setPet(pets)
     }
-    const filteredPets = pets.filter((_pet)=> _pet.gender === e.target.value);
-    return setPet(filteredPets)    
+    // const filteredPets = pets.filter((_pet)=> _pet.gender === e.target.value);
+    const filteredPets = pets.filter((_pet)=> _pet.type === value);
+    return setPet(filteredPets)
+  }
+
+  const handleGender = (e) => {
+
+    const value = e.target.value;
+
+    if(value === "all"){
+      return setPet(pets)
+    }
+    const filteredPets = pets.filter((_pet)=> _pet.gender === value);
+    return setPet(filteredPets)
+  }
+
+  const handleSize = (e) => {
+
+    const value = e.target.value;
+
+    if(value === "all"){
+      return setPet(pets)
+    }
+    const filteredPets = pets.filter((_pet)=> _pet.size === value);
+    return setPet(filteredPets)
   }
 
 
@@ -37,7 +62,19 @@ const GetPets = () => {
 
       <Grid container spacing={4}>
 
-      <Grid item md={12} sm={12} xs={12}>
+      <Grid item md={4} sm={4} xs={12}>
+        <Grid>
+          <FormControl fullWidth variant="filled">
+            <InputLabel>Busca por tipo de mascota</InputLabel>
+            <Select label="Busca por tipo" onChange={handleType}>
+              <MenuItem value="all">Todos</MenuItem>
+              <MenuItem value="dog">Perro</MenuItem>
+              <MenuItem value="cat">Gato</MenuItem>
+            </Select>
+          </FormControl>
+        </Grid>
+      </Grid>
+      <Grid item md={4} sm={4} xs={12}>
         <Grid>
           <FormControl fullWidth variant="filled">
             <InputLabel>Busca por género</InputLabel>
@@ -45,6 +82,19 @@ const GetPets = () => {
               <MenuItem value="all">Todos</MenuItem>
               <MenuItem value="male">Masculino</MenuItem>
               <MenuItem value="female">Femenino</MenuItem>
+            </Select>
+          </FormControl>
+        </Grid>
+      </Grid>
+      <Grid item md={4} sm={4} xs={12}>
+        <Grid>
+          <FormControl fullWidth variant="filled">
+            <InputLabel>Busca por tamaño</InputLabel>
+            <Select label="Busca por tamaño" onChange={handleSize}>
+              <MenuItem value="all">Todos</MenuItem>
+              <MenuItem value="big">Grande</MenuItem>
+              <MenuItem value="medium">Mediano</MenuItem>
+              <MenuItem value="small">Pequeño</MenuItem>
             </Select>
           </FormControl>
         </Grid>
@@ -71,7 +121,7 @@ const GetPets = () => {
                       <span>Edad: {mascot.age}</span>
                     </div>
                     <div className="adoption__card-button-margin">
-                      <PetDetail mascotImage={mascot.image} mascotName={mascot.name} mascotDescription={mascot.description} mascotGender={mascot.gender} mascotSize={mascot.size}/>
+                      <PetDetail mascotImage={mascot.image} mascotName={mascot.name} mascotDescription={mascot.description} mascotGender={mascot.gender} mascotSize={mascot.size} mascotAge={mascot.age}/>
                     </div>
                   </CardContent>
                 

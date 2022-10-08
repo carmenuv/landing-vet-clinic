@@ -2,7 +2,6 @@ import './Form.css';
 
 const Form=()=>{
     return(
-        <div>
             <section className='form-container' id="reserva">
                 <div className='grid-container'>
                     <div className='solicitud'>
@@ -32,8 +31,7 @@ const Form=()=>{
                     <div className="huron-image">                                
                     </div>
                 </div>
-            </section>
-        </div>        
+            </section>      
     )
 }
 export default Form;

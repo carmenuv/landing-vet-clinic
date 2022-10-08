@@ -13,8 +13,8 @@ const Hero = () => {
     return (
 
         <div>
-            <main className='main'>
-                <article className='hero' id='hero'>
+            <main className='main' id='hero'>
+                <article className='hero'>
                     <div className='hero_container'>
                         <section className='hero_info-container'>
                             <h1 className='hero_info-title'> Salud y bienestar para tu mascota </h1>
