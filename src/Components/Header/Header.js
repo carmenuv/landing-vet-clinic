@@ -7,11 +7,6 @@ const Header = () => {
 
   const navigate = useNavigate();
 
-  const getServicesPosition = () => {
-    const element = document.querySelector("#servicios");
-    element.scrollIntoView({behavior: 'smooth'})
-  }
-
   return (
 
     <header className='header '>
@@ -29,7 +24,7 @@ const Header = () => {
             <div className="collapse navbar-collapse justify-content-end " id="navbarNav">
               <ul className="navbar-nav nav">
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="http://localhost:3000/#servicios" onClick={getServicesPosition}>Servicios</a>
+                  <a className="nav-link text-white" href="http://localhost:3000/#servicios">Servicios</a>
                 </li>
                 <li className="nav-item ">
                   <a className="nav-link text-white" href="http://localhost:3000/#equipo">Equipo</a>

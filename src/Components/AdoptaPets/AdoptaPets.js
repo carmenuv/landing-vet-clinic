@@ -22,39 +22,38 @@ const GetPets = () => {
 
   const [pet, setPet] = useState(pets);
 
-  const handleType = (e) => {
+  const petFilter = (e) => {
+    e.preventDefault();
+    //capturo cada uno de los select por el id
+    let select1 = document.getElementById("animal").value;
+    let select2 = document.getElementById("genero").value;
+    let select3 = document.getElementById("tamaño").value;
+    let nuevo;
+    let nuevo2;
 
-    const value = e.target.value;
-
-    if(value === "all"){
-      return setPet(pets)
+    // console.log(select2);
+    
+    if (select1 == "all" && select2 == "all" && select3 == "all") {
+      return setPet(pets);
+    } else if (select1 !== "all") {
+      let filteredPets = pets.filter((_pet) => _pet.type === select1);
+      setPet(filteredPets);
+      if (select2 !== "all") {
+        nuevo = filteredPets.filter((_pet) => _pet.gender === select2);
+        setPet(nuevo);
+        if (select3 !== "all") {
+          nuevo2 = nuevo.filter((_pet) => _pet.size === select3);
+          setPet(nuevo2);
+        }
+      }
+    } else if (select2 !== "all") {
+      let filteredPets2 = pets.filter((_pet) => _pet.gender === select2);
+      setPet(filteredPets2);
+    } else if (select3 !== "all") {
+      let filteredPets2 = pets.filter((_pet) => _pet.size === select3);
+      setPet(filteredPets2);
     }
-    // const filteredPets = pets.filter((_pet)=> _pet.gender === e.target.value);
-    const filteredPets = pets.filter((_pet)=> _pet.type === value);
-    return setPet(filteredPets)
-  }
-
-  const handleGender = (e) => {
-
-    const value = e.target.value;
-
-    if(value === "all"){
-      return setPet(pets)
-    }
-    const filteredPets = pets.filter((_pet)=> _pet.gender === value);
-    return setPet(filteredPets)
-  }
-
-  const handleSize = (e) => {
-
-    const value = e.target.value;
-
-    if(value === "all"){
-      return setPet(pets)
-    }
-    const filteredPets = pets.filter((_pet)=> _pet.size === value);
-    return setPet(filteredPets)
-  }
+  };
 
 
   return (
@@ -62,47 +61,28 @@ const GetPets = () => {
 
       <Grid container spacing={4}>
 
-      <Grid item md={4} sm={4} xs={12}>
-        <Grid>
-          <FormControl fullWidth variant="filled">
-            <InputLabel>Busca por tipo de mascota</InputLabel>
-            <Select label="Busca por tipo" onChange={handleType}>
-              <MenuItem value="all">Todos</MenuItem>
-              <MenuItem value="dog">Perro</MenuItem>
-              <MenuItem value="cat">Gato</MenuItem>
-            </Select>
-          </FormControl>
-        </Grid>
-      </Grid>
-      <Grid item md={4} sm={4} xs={12}>
-        <Grid>
-          <FormControl fullWidth variant="filled">
-            <InputLabel>Busca por género</InputLabel>
-            <Select label="Busca por género" onChange={handleGender}>
-              <MenuItem value="all">Todos</MenuItem>
-              <MenuItem value="male">Masculino</MenuItem>
-              <MenuItem value="female">Femenino</MenuItem>
-            </Select>
-          </FormControl>
-        </Grid>
-      </Grid>
-      <Grid item md={4} sm={4} xs={12}>
-        <Grid>
-          <FormControl fullWidth variant="filled">
-            <InputLabel>Busca por tamaño</InputLabel>
-            <Select label="Busca por tamaño" onChange={handleSize}>
-              <MenuItem value="all">Todos</MenuItem>
-              <MenuItem value="big">Grande</MenuItem>
-              <MenuItem value="medium">Mediano</MenuItem>
-              <MenuItem value="small">Pequeño</MenuItem>
-            </Select>
-          </FormControl>
-        </Grid>
-      </Grid>
+        <form onChange={petFilter}>
+          <select id="animal">
+            <option value="all">todo</option>
+            <option value="dog">pe</option>
+            <option value="cat">ga</option>
+          </select>
+          <select id="genero">
+            <option value="all">tod</option>
+            <option value="male">mas</option>
+            <option value="female">feme</option>
+          </select>
+          <select id="tamaño">
+            <option value="all">todo</option>
+            <option value="big">pequeño</option>
+            <option value="medium">media</option>
+            <option value="small">gran</option>
+          </select>
+        </form>
 
         {pet.length > 0 ? (
-          pet.map((mascot, index) => (
-            <Grid key={index} item md={4} sm={12} xs={12}>
+          pet.map((mascot) => (
+            <Grid key={mascot.id} item md={4} sm={12} xs={12}>
               <div sx={{ maxWidth: 346 }} className="adoption__card">
                 
                   <CardMedia

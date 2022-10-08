@@ -38,31 +38,34 @@ const PetDetail = (props)=>{
       <Dialog open={open} onClose={handleClose} >
         <DialogContent>
 
-      {Object.keys(petInfo).length > 0 && (
-      <div className="dialog__info-container">
-      
-        <Grid item>
-          <CardMedia>
-            <img src={props.mascotImage} width={500} alt={props.mascotName.toUpperCase()}/>
-          </CardMedia>
-        </Grid>
+          {Object.keys(petInfo).length > 0 && (
+          <div className="dialog__info-container">
+          
 
-        <Grid mt={3}>
+              <CardMedia
+              component="img"
+              height={250}
+              image={props.mascotImage}
+              alt={props.mascotName.toUpperCase()}
+              />
 
-          <h2 className="dialog__pet-name">{props.mascotName.toUpperCase()}</h2>
-          <div className="dialog__pet-details">
-            <Typography><b>Género:</b> {props.mascotGender}</Typography>
-            <Typography><b>Tamaño:</b> {props.mascotSize}</Typography>
-            <Typography><b>Edad:</b> {props.mascotAge}</Typography>
+
+            <Grid mt={3}>
+
+              <h2 className="dialog__pet-name">{props.mascotName.toUpperCase()}</h2>
+              <div className="dialog__pet-details">
+                <Typography><b>Género:</b> {props.mascotGender}</Typography>
+                <Typography><b>Tamaño:</b> {props.mascotSize}</Typography>
+                <Typography><b>Edad:</b> {props.mascotAge}</Typography>
+              </div>
+              <Divider />
+              <div className="dialog__pet-description">
+                <Typography><b>Descripción:</b> {props.mascotDescription}</Typography>
+              </div>
+
+            </Grid>
           </div>
-          <Divider />
-          <div className="dialog__pet-description">
-            <Typography><b>Descripción:</b> {props.mascotDescription}</Typography>
-          </div>
-
-        </Grid>
-      </div>
-      )}
+          )}
                 
         </DialogContent>
       </Dialog>

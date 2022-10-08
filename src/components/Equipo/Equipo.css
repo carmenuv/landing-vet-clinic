@@ -3,10 +3,12 @@
   margin: 0;
   padding: 0 ;
 }
+.equipo__section {
+  scroll-margin-top: 110px;
+}
 
 .equipo {
   margin-top: 0;
-  scroll-margin-top: 83px;
 }
 
 .equipo__info-title {
