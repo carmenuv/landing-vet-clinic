@@ -30,6 +30,7 @@ const GetPets = () => {
     let select3 = document.getElementById("tamaño").value;
     let nuevo;
     let nuevo2;
+    let nuevo3;
 
     // console.log(select2);
     
@@ -49,6 +50,10 @@ const GetPets = () => {
     } else if (select2 !== "all") {
       let filteredPets2 = pets.filter((_pet) => _pet.gender === select2);
       setPet(filteredPets2);
+      if (select3 !== "all"){
+        nuevo3 = filteredPets2.filter((_pet) => _pet.size === select3)
+        setPet(nuevo3);
+      }
     } else if (select3 !== "all") {
       let filteredPets2 = pets.filter((_pet) => _pet.size === select3);
       setPet(filteredPets2);
@@ -74,9 +79,9 @@ const GetPets = () => {
           </select>
           <select id="tamaño">
             <option value="all">todo</option>
-            <option value="big">pequeño</option>
+            <option value="big">grande</option>
             <option value="medium">media</option>
-            <option value="small">gran</option>
+            <option value="small">pequeño</option>
           </select>
         </form>
 
