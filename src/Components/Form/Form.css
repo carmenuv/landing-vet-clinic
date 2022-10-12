@@ -3,6 +3,7 @@
   max-width: 1024px;
   margin: 0 auto;
   font-family: 'Nunito', sans-serif;
+  scroll-margin-top: 100px;
 }
 .solicitud__title{
   color: #434343;
@@ -30,7 +31,8 @@
 }
 .icono-user,
 .icono-telefono,
-.icono-huella{
+.icono-huella,
+.icono-mail{
   background-image: url(../../assets/huella2.png);
   background-size: 1rem 1rem;
   background-repeat: no-repeat;
@@ -55,9 +57,15 @@
 .icono-telefono{
   background-image: url(../../assets/llamada-telefonica2.png);
 }
+
 .icono-user{
   background-image: url(../../assets/usuario2.png);
 }
+
+.icono-mail{
+  background-image: url(../../assets/correo-electronico.png);
+}
+
 .container__acepto-datos{
   display: flex;
   margin-bottom: 1rem;

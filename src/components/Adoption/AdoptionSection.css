@@ -2,7 +2,9 @@
   font-family: 'Nunito', sans-serif;
   margin: 2rem 0;
   padding: 1rem;
+  scroll-margin-top: 100px;
 }
+
 .adoption__info-title {
   color: #434343;
   margin: 0 auto;

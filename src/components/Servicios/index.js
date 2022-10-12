@@ -19,7 +19,7 @@ import img6 from '../../assets/servicios-6.jpg';
 const Servicios =()=>{
 
     return(
-    <section className='body' id="servicios">
+    <section className='servicios__section' id="servicios">
       <div className="slider__container-tittle">
         <h1 className="slider__title">¿Qué ofrecemos?</h1>
       </div>

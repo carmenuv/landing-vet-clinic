@@ -1,0 +1,62 @@
+.section-adopta__container{
+  margin-top: 7rem;
+  font-family: 'Nunito', sans-serif;
+  min-height: 100vh;
+}
+
+.section-adopta__form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.section-adopta__form{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.section-adopta__form-select {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border-radius: .5rem;
+  border: 1px solid #dedede;
+  padding: .5rem;
+  background-color: #f1f1f1;
+  transition: .3s;
+}
+
+.section-adopta__form-select:hover{
+  border: 1px solid #27b1f4
+}
+
+.adoption__card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 2rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.adoption__card-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #434343;
+}
+
+.adoption__card-info{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #434343;
+}
+
+@media (min-width: 854px){
+
+  .section-adopta__form{
+    gap: 1.5rem;
+  }
+}
