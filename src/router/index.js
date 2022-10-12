@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Adoption from "../Components/Adopta";
-import Header from "../Components/Header/Header";
-import Footer from "../Components/Footer/Footer";
-import Hero from "../Components/Hero/Hero";
+import Adoption from "../components/Adopta";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import Hero from "../components/Hero/Hero";
 
 const Router =()=>{
 
