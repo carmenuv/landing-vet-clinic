@@ -20,7 +20,7 @@ const Hero = () => {
                             <h1 className='hero_info-title'> Salud y bienestar para tu mascota </h1>
                             <p className='hero_info-paragraph'> Amplia experiencia clínica. Contamos con movilidad para transporte </p>
                             <div className='hero_info-link-container'>
-                                <a href="#reserva" className='hero_info-link--colorbg'>Reserva una cita</a>
+                                <a href="#reserva" className='hero_info-link--colorbg'>Agenda una cita</a>
                                 <a href="#adopta" className='hero_info-link'> Adopta </a>
                             </div>
                         </section>

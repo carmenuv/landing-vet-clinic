@@ -33,7 +33,7 @@ const Header = () => {
                   <a className="nav-link text-white" href="http://localhost:3000/#testimonios">Testimonios</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="http://localhost:3000/#contacto">Contacto</a>
+                  <a className="nav-link text-white" href="#contacto">Contacto</a>
                 </li>
               </ul>
             </div>

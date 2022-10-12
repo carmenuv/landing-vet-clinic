@@ -37,7 +37,7 @@
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-
+    background-color: #f1f1f1;
 }
 .panda{
     background-image: url(../../assets/logo-vet-clinic.svg);
@@ -73,7 +73,6 @@
 
 .ancor-iconos{
     margin: 2rem 0;    
-    
     font-size: 1rem;
 }
 .copyright{
@@ -89,6 +88,14 @@
 
 .list-footer{
     text-align: center;
+}
+
+.bi-geo-alt-fill,
+.bi-clock-fill,
+.bi-phone-fill,
+.bi-envelope-fill {
+    color: #434343;
+    margin: 0;
 }
 
 @media (min-width: 854px) {

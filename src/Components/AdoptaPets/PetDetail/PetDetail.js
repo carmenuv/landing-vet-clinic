@@ -62,6 +62,10 @@ const PetDetail = (props)=>{
               <div className="dialog__pet-description">
                 <Typography><b>Descripción:</b> {props.mascotDescription}</Typography>
               </div>
+              <Divider />
+              <div className="dialog__pet-description">
+                <Typography>Si deseas adotpar a {props.mascotName.toUpperCase()}, acércate a Av. Paseo la Castellana 000. Santiago de Surco</Typography>
+              </div>
 
             </Grid>
           </div>

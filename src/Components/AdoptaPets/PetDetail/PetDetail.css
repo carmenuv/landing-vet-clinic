@@ -19,6 +19,7 @@
 
 .dialog__pet-details{
   display: flex;
+  flex-direction: column;
   gap: 1rem;
   justify-content: center;
   text-transform: uppercase;
@@ -26,5 +27,11 @@
 }
 
 .dialog__pet-description{
-  margin-top: 1rem;
+  margin: 1rem 0 1rem;
+}
+
+@media (min-width: 854px){
+  .dialog__pet-details{
+    flex-direction: row;
+  }
 }

@@ -9,10 +9,10 @@ const Footer=()=>{
                         <div className="contactese-con">
                             <h2 className="menu-contactese">Contáctanos</h2>
                             <nav className="list-footer">
-                                <li>Avenida Paseo la Castellana 000. Santiago de Surco</li>
-                                <li>8am - 8pm</li>
-                                <li>954 365 128</li>
-                                <li>hola@vetclinic.com</li>
+                                <li><i class="bi bi-geo-alt-fill"></i> Avenida Paseo la Castellana 000. Santiago de Surco</li>
+                                <li><i class="bi bi-clock-fill"></i> 8am - 8pm</li>
+                                <li><i class="bi bi-phone-fill"></i> 954 365 128</li>
+                                <li><i class="bi bi-envelope-fill"></i> hola@vetclinic.com</li>
                             </nav>
                             <div className="mapa-veterinaria">
                                 <iframe 
@@ -35,8 +35,6 @@ const Footer=()=>{
                                 <nav className="ancor-footer">
                                     <a href="#servicios">Servicios</a>
                                     <a href="#equipo">Equipo</a>
-                                    <a href="#">Quiénes somos</a>
-                                    <a href="#">Preguntas</a>
                                     <a href="#testimonios">Opiniones</a>
                                 </nav>
                             </div>

@@ -64,26 +64,31 @@ const GetPets = () => {
   return (
     <Container className="section-adopta__container">
 
-      <Grid container spacing={4}>
+        <div className="section-adopta__form-container">
+          <form
+            onChange={petFilter}
+            className="section-adopta__form"
+            >
+            <select id="animal" className="section-adopta__form-select">
+              <option value="all">Tipo</option>
+              <option value="dog">Perro</option>
+              <option value="cat">Gato</option>
+            </select>
+            <select id="genero" className="section-adopta__form-select">
+              <option value="all">Género</option>
+              <option value="male">Masculino</option>
+              <option value="female">Femenino</option>
+            </select>
+            <select id="tamaño" className="section-adopta__form-select">
+              <option value="all">Tamaño</option>
+              <option value="big">Grande</option>
+              <option value="medium">Mediano</option>
+              <option value="small">Pequeño</option>
+            </select>
+          </form>
+        </div>
 
-        <form onChange={petFilter}>
-          <select id="animal">
-            <option value="all">todo</option>
-            <option value="dog">pe</option>
-            <option value="cat">ga</option>
-          </select>
-          <select id="genero">
-            <option value="all">tod</option>
-            <option value="male">mas</option>
-            <option value="female">feme</option>
-          </select>
-          <select id="tamaño">
-            <option value="all">todo</option>
-            <option value="big">grande</option>
-            <option value="medium">media</option>
-            <option value="small">pequeño</option>
-          </select>
-        </form>
+      <Grid container spacing={4}>
 
         {pet.length > 0 ? (
           pet.map((mascot) => (
@@ -101,9 +106,9 @@ const GetPets = () => {
                       {mascot.name.toUpperCase()}
                     </h2>
                     <div className="adoption__card-info">
-                      <span>Género: {mascot.gender}</span>
+                      <span><b>Género:</b> {mascot.gender}</span>
                       <span>|</span>
-                      <span>Edad: {mascot.age}</span>
+                      <span><b>Edad:</b> {mascot.age}</span>
                     </div>
                     <div className="adoption__card-button-margin">
                       <PetDetail mascotImage={mascot.image} mascotName={mascot.name} mascotDescription={mascot.description} mascotGender={mascot.gender} mascotSize={mascot.size} mascotAge={mascot.age}/>

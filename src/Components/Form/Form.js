@@ -5,7 +5,7 @@ const Form=()=>{
             <section className='form-container' id="reserva">
                 <div className='grid-container'>
                     <div className='solicitud'>
-                        <h2 className='solicitud__title'>Reserva una cita</h2>
+                        <h2 className='solicitud__title'>Agenda una cita</h2>
                         <p className='solicitud__subtitle'>Déjanos tus datos y nos comunicaremos a la brevedad posible.</p>
 
                         <div className='inputs-images'>
@@ -13,6 +13,7 @@ const Form=()=>{
                                 <input type="text" className="icono-user"placeholder="Nombre Completo"/>
                                 <input type="text" className="icono-huella" placeholder="Tipo de mascota"/>
                                 <input type="text" className="icono-telefono" placeholder="Número de teléfono"/> 
+                                <input type="text" className="icono-mail" placeholder="Email"/> 
                                 
                                 <div className='container__acepto-datos'>
                                     <input type="checkbox" className='acepto-datos' />
@@ -22,7 +23,7 @@ const Form=()=>{
                             </form>
                             <div className="botones-citas">                       
 
-                                <button className='hacer-cita hacer-cita--colorbg'>Reserve una cita</button>
+                                <button className='hacer-cita hacer-cita--colorbg'>Agenda una cita</button>
                                 <button className='hacer-cita '>Llame a un médico</button>
                             </div> 
                         </div>                       
