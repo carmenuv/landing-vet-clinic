@@ -14,7 +14,7 @@ const Header = () => {
         <nav className="navbar navbar-expand-lg p-3 ">
           <div className="container-fluid ">
             
-            <a href="#" className="navbar-brand" onClick={()=>navigate("/")}>
+            <a href="/" className="navbar-brand" onClick={()=>navigate("/")}>
               <img className='header-nav_link-logo' src={logo} alt="Logo Veterinaria" width="134px" height="44px" />
             </a>
             
