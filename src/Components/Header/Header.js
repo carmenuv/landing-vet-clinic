@@ -24,13 +24,13 @@ const Header = () => {
             <div className="collapse navbar-collapse justify-content-end " id="navbarNav">
               <ul className="navbar-nav nav">
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="http://localhost:3000/#servicios">Servicios</a>
+                  <a className="nav-link text-white" href="/#servicios">Servicios</a>
                 </li>
                 <li className="nav-item ">
-                  <a className="nav-link text-white" href="http://localhost:3000/#equipo">Equipo</a>
+                  <a className="nav-link text-white" href="/#equipo">Equipo</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="http://localhost:3000/#testimonios">Testimonios</a>
+                  <a className="nav-link text-white" href="/#testimonios">Testimonios</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link text-white" href="#contacto">Contacto</a>

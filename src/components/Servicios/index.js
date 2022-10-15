@@ -1,20 +1,15 @@
 import React from 'react';
-import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/navigation";
-
-import "./Servicios.css";
-
 import { Navigation } from "swiper";
-
 import img1 from '../../assets/servicios-1.jpg';
 import img2 from '../../assets/servicios-2.jpg';
 import img3 from '../../assets/servicios-3.jpg';
 import img4 from '../../assets/servicios-4.jpg';
 import img5 from '../../assets/servicios-5.jpg';
 import img6 from '../../assets/servicios-6.jpg';
+import "./Servicios.css";
 
 const Servicios =()=>{
 
