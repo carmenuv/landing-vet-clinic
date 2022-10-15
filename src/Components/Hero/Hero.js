@@ -1,11 +1,11 @@
 import React from 'react';
 import './Hero.css';
 import perrito from "../../Img/img-hero.png";
-import { Servicios } from '../Servicios';
-import Form from '../Form/Form';
-import AdoptionSection from '../Adoption';
-import { Equipo } from '../Equipo/index';
-import {Testimonios} from '../Testimonios/index';
+import { Servicios } from '../servicios';
+import Form from '../form/Form';
+import AdoptionSection from '../adoption';
+import { Equipo } from '../equipo/index';
+import {Testimonios} from '../testimonios/index';
 
 
 const Hero = () => {

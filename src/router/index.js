@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "../components/Header/Header.js";
-import Footer from "../components/Footer/Footer.js";
-import Hero from "../components/Hero/Hero.js";
-import GetPets from "../components/AdoptaPets/AdoptaPets.js";
+import Header from "../components/header/Header.js";
+import Footer from "../components/footer/Footer.js";
+import Hero from "../components/hero/Hero.js";
+import GetPets from "../components/adoptaPets/AdoptaPets.js";
 
 const Router =()=>{
 

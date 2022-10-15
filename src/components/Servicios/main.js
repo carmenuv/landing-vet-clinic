@@ -6,6 +6,6 @@ import ReactDOM from "react-dom";
 import "swiper/css/bundle";
 import "./Servicios.css";
 
-import App from "./App.jsx";
+import App from "./App.jsx.js";
 
 ReactDOM.render(<App />, document.getElementById("app"));
