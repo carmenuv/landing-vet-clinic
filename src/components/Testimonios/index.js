@@ -10,11 +10,11 @@ const Testimonios =()=>{
 
     return(
 
-    <section class="testimonials" id="testimonios">
-      <div class="testimonials-container">
+    <section className="testimonials" id="testimonios">
+      <div className="testimonials-container">
 
-        <div class="testimonials__container-title">
-          <h1 class="testimonials__info-subtitle">¿Qué opinión tienen nuestros clientes de nuestros servicios?</h1>
+        <div className="testimonials__container-title">
+          <h1 className="testimonials__info-subtitle">¿Qué opinión tienen nuestros clientes de nuestros servicios?</h1>
         </div>
 
         <div className="row">
@@ -23,9 +23,9 @@ const Testimonios =()=>{
               <div className="testimonial-img">
                 <img src={img1} alt="dog"/>
               </div>
-              <di className="quote-mark">
+              <div className="quote-mark">
                 <i className="bi bi-quote testimonial__icon"></i>
-              </di>            
+              </div>            
               <div className="testimonial-text">
                 <p>
                   Hace 2 años que llevo a mi perrito y ha sido fantástico. Ellos nos atienden lo más rápido posible. Son muy higiénicos y, lo más importante, la atención es de primera. Los recomiendo.

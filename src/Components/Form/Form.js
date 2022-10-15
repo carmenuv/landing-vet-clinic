@@ -3,6 +3,7 @@
 import './Form.css';
 
 const Form = () => {
+
     return (
         <div>
             <section className='form-container' id="reserva">
@@ -13,10 +14,10 @@ const Form = () => {
 
                         <div className='inputs-images'>
                             <form action="https://getform.io/f/68f0d0bf-d8ec-4bf0-830a-ef15c1739128" method="POST">
-                                <input type="text" className="icono-user" name="Nombre Completo" placeholder="Nombre Completo"/>
-                                <input type="text" className="icono-huella" name="Tipo de mascota" placeholder="Tipo de mascota" />
-                                <input type="text" className="icono-telefono" name="Número de teléfono" placeholder="Número de teléfono" />
-                                <input type="text" className="icono-mail" name="Email" placeholder="Email"/> 
+                                <input type="text" className="icono-user" name="Nombre Completo" placeholder="Nombre Completo" required/>
+                                <input type="text" className="icono-huella" name="Tipo de mascota" placeholder="Tipo de mascota" required/>
+                                <input type="number" className="icono-telefono" name="Número de teléfono" placeholder="Número de teléfono" required/>
+                                <input type="email" className="icono-mail" name="Email" placeholder="Email" required/> 
 
                                 <div className='container__acepto-datos'>
                                     <input type="checkbox" className='acepto-datos' />
@@ -26,7 +27,7 @@ const Form = () => {
 
                                 <div className="botones-citas">
 
-                                    <button type="submit" className='hacer-cita hacer-cita--colorbg'>Agenda una cita</button>
+                                    <button type="submit" className='hacer-cita hacer-cita--colorbg' >Agenda una cita</button>
 
                                 </div>
                             </form>
